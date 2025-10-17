@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>creepemax store</title>
+  <title>CREEPERMAX Store</title>
   <style>
     body {
       font-family: "Poppins", sans-serif;
-      background-color: #d9ff91; /* verde-limão-claro */
+      background-color: #d9ff91;
       color: #222;
       margin: 0;
       padding: 0;
@@ -17,10 +17,22 @@
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 2.8rem;
       color: #3d7a00;
       margin: 2rem 0 1rem 0;
       text-align: center;
+    }
+
+    h1 span {
+      font-size: 3rem;
+    }
+
+    img {
+      width: 90%;
+      max-width: 600px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1.5rem;
     }
 
     .categoria {
@@ -35,10 +47,11 @@
 
     .categoria h2 {
       color: #66a000;
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin-bottom: 1rem;
       border-bottom: 3px solid #b7ff00;
       padding-bottom: 0.5rem;
+      text-align: center;
     }
 
     .produtos {
@@ -50,7 +63,7 @@
     .produto {
       background-color: #ecffcf;
       border-radius: 15px;
-      padding: 1rem;
+      padding: 1.5rem;
       text-align: center;
       transition: 0.3s;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -62,8 +75,9 @@
     }
 
     .produto h3 {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       margin-bottom: 0.5rem;
+      color: #366300;
     }
 
     .produto p {
@@ -75,28 +89,44 @@
       background-color: #aaff00;
       border: none;
       border-radius: 10px;
-      padding: 0.6rem 1.2rem;
+      padding: 0.7rem 1.4rem;
       font-weight: bold;
       color: #333;
       cursor: pointer;
-      transition: background-color 0.2s;
+      transition: background-color 0.2s, transform 0.2s;
     }
 
     .btn:hover {
       background-color: #99ee00;
+      transform: scale(1.05);
     }
 
     footer {
       margin: 2rem 0;
       color: #555;
       font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .categoria {
+        padding: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>💥 CREEPERMAX 💥</h1>
+  <h1>💥 <span>CREEPERMAX</span> 💥</h1>
 
-  <img src="https://i.postimg.cc/T2n31zx0/CREEPERMAX-20251017-130550-0000.png" alt="">
+  <img src="https://i.postimg.cc/T2n31zx0/CREEPERMAX-20251017-130550-0000.png" alt="Banner CreeperMAX">
 
   <!-- Categoria: Roube um Brainrot -->
   <section class="categoria">
@@ -105,9 +135,7 @@
       <div class="produto">
         <h3>Todos os Brainrots</h3>
         <p>Preço: <strong>A combinar</strong></p>
-        <button onclick="window.location.href='https://www.instagram.com/creeeperaxggofc?igsh=cXlhZ3NnaDkwZGxh';">
-  <span contenteditable="true">COMPRAR</span>
-        </button>
+        <button class="btn" onclick="abrirLink('Roube um Brainrot')">COMPRAR</button>
       </div>
     </div>
   </section>
@@ -119,9 +147,7 @@
       <div class="produto">
         <h3>Todos os pets e plantas</h3>
         <p>Preço: <strong>A combinar</strong></p>
-        <button onclick="window.location.href='https://www.instagram.com/creeeperaxggofc?igsh=cXlhZ3NnaDkwZGxh';">
-  <span contenteditable="true">COMPRAR</span>
-        </button>
+        <button class="btn" onclick="abrirLink('Crescer um Jardim')">COMPRAR</button>
       </div>
     </div>
   </section>
@@ -133,9 +159,7 @@
       <div class="produto">
         <h3>99 Noites na Floresta (Contas OP)</h3>
         <p>Preço: <strong>A combinar</strong></p>
-        <button onclick="window.location.href='https://www.instagram.com/creeeperaxggofc?igsh=cXlhZ3NnaDkwZGxh';">
-  <span contenteditable="true">COMPRAR</span>
-        </button>
+        <button class="btn" onclick="abrirLink('99 Noites na Floresta')">COMPRAR</button>
       </div>
     </div>
   </section>
@@ -147,22 +171,19 @@
       <div class="produto">
         <h3>Blox Fruits (Contas OP)</h3>
         <p>Preço: <strong>A combinar</strong></p>
-        <button onclick="window.location.href='https://www.instagram.com/creeeperaxggofc?igsh=cXlhZ3NnaDkwZGxh';">
-  <span contenteditable="true">COMPRAR</span>
-        </button>
+        <button class="btn" onclick="abrirLink('Blox Fruits')">COMPRAR</button>
       </div>
     </div>
   </section>
 
+  <!-- Categoria: Conta Aleatória -->
   <section class="categoria">
-    <h2>CONTA ALEATÓRIA</h2>
+    <h2>Conta Aleatória</h2>
     <div class="produtos">
       <div class="produto">
-        <h3>CONTA ALEATÓRIA</h3>
+        <h3>Conta Aleatória</h3>
         <p>Preço: <strong>R$10,00</strong></p>
-        <button onclick="window.location.href='https://www.instagram.com/creeeperaxggofc?igsh=cXlhZ3NnaDkwZGxh';">
-  <span contenteditable="true">COMPRAR</span>
-        </button>
+        <button class="btn" onclick="abrirLink('Conta Aleatória')">COMPRAR</button>
       </div>
     </div>
   </section>
@@ -172,10 +193,10 @@
   </footer>
 
   <script>
-    function sintato(produto) {
-      // <<< Aqui você vai colocar o seu código depois
+    function abrirLink(produto) {
       alert("Abrindo negociação para: " + produto);
+      window.location.href = 'https://www.instagram.com/creeeperaxggofc?igsh=cXlhZ3NnaDkwZGxh';
     }
   </script>
 </body>
-</html>
+    </html>
